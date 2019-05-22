@@ -1,0 +1,13 @@
+
+:root {
+    --Oragne : #fb8122;
+    --DarkGrey: #1d2228; 
+    --LightGrey: #e1e2e2;
+}
+
+
+body{
+    background: var(--DarkGrey);
+    /* color: var(--LightGrey); */
+}
+

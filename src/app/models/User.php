@@ -1,25 +1,56 @@
 <?php
 
-// require_once './Person.php'; 
+// class User
+// prop: userName, password, email
+// behavior: subscribe, login, change password
 
-class User //extends Person 
+
+
+class User 
 {
     private $userName;
     private $password; 
+    private $email;
 
-    public function __construct($userName, $password)// $firstName, $lastName)
+    public function __construct($userName, $password, $email)
     {
-        // __parent::__construct($firstName, $lastName); 
-
         $this->userName = $userName;
         $this->password = $password; 
+        $this->email = $email;
     }
 
-    public function getUserName(){
+    public function getUserName()
+    {
         return $this->userName;
     }
 
-    public function getPassword(){
+    public function getPassword()
+    {
         return $this->password; 
     }
+
+    public function getEmail()
+    {
+        return $this->email;
+    }
+
+    public function changePassword($userName, $oldPassword, $newPassword)
+    {
+
+        $passwordChanged = false;
+
+        if($oldPassword == $this->password && $userName == $this->userName)
+        {
+            $this->password = $newPassword;
+            //update cookie
+            $passwordChanged = true; 
+        }
+    
+        return $passwordChanged;
+    }
+
+    // public function login($userName, $password)
+    // {
+
+    // }
 }

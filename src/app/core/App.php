@@ -70,15 +70,12 @@ class App
                 {
                     $this->params[$key] = $value;
                 }
-                
                 break;
             default:
                 break;
         }
         // ----------------------------------------------------------------
 
-
-        var_dump($this->params);
         
         //call the controller method passed, params can be associative array
         call_user_func(array($this->controller,$this->method), $this->params);

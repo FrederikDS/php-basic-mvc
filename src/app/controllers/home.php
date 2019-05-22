@@ -5,13 +5,10 @@
 class Home extends Controller
 {
 
-    // public function index($name = '')
     public function index()
     {
-        // $user = $this->model('User');
-        // $user->name = $name;
+        //no need to set a model, maybe check for a cookie to check if user exists?
         
-        // $this->view('home/index', ['name' => $user->name]); //directory path
         $this->view('home/index');
     }
      

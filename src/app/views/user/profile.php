@@ -13,7 +13,7 @@
   <body>
     <h2>Hello </h2> 
     
-    <p> Usre Name: <?=$data['userName']?> <br> Password: <?=$data['password']?></p> 
+    <p> User Name: <?=$data['userName']?> <br> Email: <?=$data['email']?></p> 
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
