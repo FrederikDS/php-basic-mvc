@@ -2,7 +2,7 @@
 
 // class User
 // prop: userName, password, email
-// behavior: subscribe, login, change password
+// behavior: change password
 
 
 
@@ -48,9 +48,4 @@ class User
     
         return $passwordChanged;
     }
-
-    // public function login($userName, $password)
-    // {
-
-    // }
 }
