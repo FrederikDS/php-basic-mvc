@@ -47,21 +47,23 @@ class App
         }
         // ----------------------------------------------------------------
 
+        
         // Init the params passed in the URL ------------------------------
         // GET => params are passed in the URL 
         // check if the url array still contains items, those are the params passed to the method
         // POST => params are passed in the body of the request
         switch($_SERVER['REQUEST_METHOD'])
         {
+            
             case 'GET':
                 //if htaccess rewrite works properly can use this
-                // $this->params = $url ? array_values($url) : [];
+                $this->params = $url ? array_values($url) : [];
 
                 //temp work around till the htaccess rewrite works fine
-                foreach($_GET as $key => $value)
-                {
-                    $this->params[$key] = $value;
-                }
+                // foreach($_GET as $key => $value)
+                // {
+                //     $this->params[$key] = $value;
+                // }
                 break;
             case 'POST': 
                 //loop through the post data
@@ -96,6 +98,7 @@ class App
     // url[..] = args
     protected function parseUrl()
     {
+
         if(isset($_GET['url']))
         {
             return $url = explode('/',filter_var(rtrim($_GET['url'], '/'), FILTER_SANITIZE_URL));

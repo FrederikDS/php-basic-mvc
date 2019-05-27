@@ -12,7 +12,6 @@
   </head>
   <body>
     <h2>Hello </h2> 
-    
     <p> User Name: <?=$data['userName']?> <br> Email: <?=$data['email']?></p> 
     
     <!-- Optional JavaScript -->

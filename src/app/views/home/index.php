@@ -15,7 +15,7 @@
         <div class="container">
             <div class="row justify-content-center align-items-center vh-100">
             <div class="col-md-4 col-lg-4 col-sm">
-              <form action="/userprofile/index/" method="post" class="border rounded p-4 bg-light">
+              <form action="/public/userprofile/index/" method="post" class="border rounded p-4 bg-light">
                 <label for="username" class="contol-label">User Name</label>
                 <div class="form-group input-group">
                   <input type="text" class="form-control" id="username"  name="userName" placeholder="username" required>
